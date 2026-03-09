@@ -1,0 +1,167 @@
+<!-- Tells the browser that this document uses HTML5 -->
+<!doctype html>
+
+<!-- Starts the HTML document and sets the language to English -->
+<html lang="en">
+  <!-- The head section contains settings and information for the browser -->
+  <head>
+    <!-- Sets the character encoding to UTF-8 so text displays correctly -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the page responsive on phones, tablets, and other screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sets the title shown on the browser tab -->
+    <title>Application Form - Fahad</title>
+
+    <!-- Ends the head section -->
+  </head>
+
+  <!-- The body section contains everything that appears on the webpage -->
+  <body>
+    <!-- Main heading of the page -->
+    <h1>Application for Teaching Assistant - Fahad's Web Course</h1>
+
+    <!-- Starts the form
+         action="/submit-form" means the form data will be sent to this URL
+         method="post" means the data will be sent securely in the request body -->
+    <form action="/submit-form" method="post">
+      <!-- A div is used to group related form elements together -->
+      <div>
+        <!-- Label for the username input field
+                 for="username" connects this label to the input with id="username" -->
+        <label for="username">Enter your Username:</label>
+
+        <!-- Text input field for the username
+                 type="text" allows normal text input
+                 id="username" gives this input a unique identity
+                 name="username" is the name sent with the form data
+                 placeholder shows example text inside the box
+                 autofocus puts the cursor here when the page loads
+                 required means the user must fill this field before submitting -->
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="e.g. fahad_ayyaz"
+          autofocus
+          required
+        />
+
+        <!-- Ends the first group -->
+      </div>
+
+      <!-- Adds a line break for spacing -->
+      <br />
+
+      <!-- Starts a new group for gender selection -->
+      <div>
+        <!-- Simple text label for the gender section -->
+        <label>Select Gender:</label>
+
+        <!-- Radio button for selecting Male
+                 Radio buttons with the same name allow only one choice -->
+        <input type="radio" id="male" name="gender" value="male" />
+
+        <!-- Label connected to the Male radio button -->
+        <label for="male">Male</label>
+
+        <!-- Radio button for selecting Female -->
+        <input type="radio" id="female" name="gender" value="female" />
+
+        <!-- Label connected to the Female radio button -->
+        <label for="female">Female</label>
+
+        <!-- Ends the gender group -->
+      </div>
+
+      <!-- Adds a line break for spacing -->
+      <br />
+
+      <!-- Starts a new group for the subscription option -->
+      <div>
+        <!-- Checkbox input
+                 A checkbox allows the user to choose yes or no -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+
+        <!-- Label connected to the checkbox -->
+        <label for="subscribe">Subscribe to Fahad's updates</label>
+
+        <!-- Ends the checkbox group -->
+      </div>
+
+      <!-- Adds a line break for spacing -->
+      <br />
+
+      <!-- Starts a new group for city selection -->
+      <div>
+        <!-- Label for the dropdown menu -->
+        <label for="city">Select your City:</label>
+
+        <!-- Creates a dropdown list
+                 name="city" is the field name sent in the form
+                 id="city" connects the dropdown to its label -->
+        <select name="city" id="city">
+          <!-- First option in the dropdown -->
+          <option value="islamabad">Islamabad</option>
+
+          <!-- Second option in the dropdown -->
+          <option value="lahore">Lahore</option>
+
+          <!-- Third option in the dropdown -->
+          <option value="karachi">Karachi</option>
+
+          <!-- Fourth option in the dropdown -->
+          <option value="madinah">Madinah</option>
+
+          <!-- Ends the dropdown list -->
+        </select>
+
+        <!-- Ends the city group -->
+      </div>
+
+      <!-- Adds a line break for spacing -->
+      <br />
+
+      <!-- Starts a new group for user comments -->
+      <div>
+        <!-- Label for the textarea -->
+        <label for="comments">Tell us about your expertise:</label>
+
+        <!-- Adds a line break so the textarea appears on the next line -->
+        <br />
+
+        <!-- Textarea creates a multi-line text box
+                 rows="4" sets the visible height
+                 cols="30" sets the visible width
+                 placeholder shows example text inside the box -->
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          cols="30"
+          placeholder="Enter your details here..."
+        ></textarea>
+
+        <!-- Ends the comments group -->
+      </div>
+
+      <!-- Adds a line break for spacing -->
+      <br />
+
+      <!-- Starts a new group for the submit button -->
+      <div>
+        <!-- Submit button used to send the form data -->
+        <input type="submit" value="Submit Application" />
+
+        <!-- Ends the submit button group -->
+      </div>
+
+      <!-- Ends the form -->
+    </form>
+
+    <!-- Ends the visible page content -->
+  </body>
+
+  <!-- Ends the HTML document -->
+</html>
