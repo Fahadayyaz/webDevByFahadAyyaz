@@ -1,0 +1,88 @@
+<!-- this is a comment and only developers can see it -->
+<!-- there are single and paired tags in html. single tags are self closed and paired tags are closed with a slash / -->
+<!-- everything in headtag is hidden except title tag -->
+<!-- you don't have to remember the syntax of each tag, just keep in mind how things work -->
+<!doctype html>
+<!-- tells the browser that this document is written in HTML5 -->
+
+<html lang="en">
+  <!-- root element of the webpage; lang="en" tells the browser the page language is English -->
+
+  <head>
+    <!-- head section contains metadata and information about the page -->
+
+    <meta charset="UTF-8" />
+    <!-- sets character encoding so text displays correctly -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- makes the webpage responsive on different devices like phones and tablets -->
+
+    <title>Our First Webpage</title>
+    <!-- title of the webpage that appears on the browser tab -->
+  </head>
+
+  <body>
+    <!-- body contains everything that will appear on the webpage -->
+
+    <h1>Media Player</h1>
+    <!-- main heading of the page -->
+
+    <p>
+      We will explore things deeply. But this is just to show you how things
+      work in HTML.
+    </p>
+    <!-- paragraph explaining the purpose of the page -->
+
+    <h3>Video in Local Storage</h3>
+    <!-- subheading describing the next section -->
+
+    <p>This video is played from our local storage.</p>
+    <!-- text explaining that the video file is stored on our computer/server -->
+
+    <video height="400" controls>
+      <!-- video tag is used to display videos on a webpage -->
+      <!-- height="400" sets the height of the video player -->
+      <!-- controls adds play, pause, volume, and fullscreen buttons -->
+
+      <source src="/videos/norway.mp4" type="video/mp4" />
+      <!-- source tag specifies the video file location and its format -->
+      <!-- src points to the video file -->
+      <!-- type tells the browser the video format -->
+    </video>
+
+    <br /><br />
+    <!-- line breaks to create vertical space -->
+
+    <hr />
+    <!-- horizontal line used to visually separate sections -->
+
+    <br />
+    <!-- another line break for spacing -->
+
+    <h3>This Video is Played live from YouTube</h3>
+    <!-- heading for the YouTube embedded video section -->
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/sRWcJrMTtMI"
+      title="YouTube video player"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+      "
+      allowfullscreen
+    >
+    </iframe>
+    <!-- iframe is used to embed external content such as YouTube videos -->
+    <!-- width and height define the size of the embedded player -->
+    <!-- src contains the YouTube embed link -->
+    <!-- allow enables certain browser features -->
+    <!-- allowfullscreen lets the video go fullscreen -->
+  </body>
+</html>
+<!-- closing tag of the HTML document -->
