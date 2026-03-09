@@ -1,0 +1,95 @@
+<!doctype html>
+<!-- Standard declaration to tell the browser this is HTML5 -->
+<html lang="en">
+  <!-- The root element; setting language to English helps screen readers -->
+
+  <head>
+    <!-- The "Backstage" area: stuff here doesn't show on the page directly -->
+    <meta charset="UTF-8" />
+    <!-- Ensures special symbols (like emojis or foreign characters) display correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the site look good on mobile phones -->
+    <title>Ids and Classes - Tutorial #9</title>
+    <!-- The text shown on the browser tab -->
+
+    <style>
+      /* CSS Section Starts: This is where we design the look of the page */
+
+      /* -----------------------------------------------------------
+           TEACHING NOTE: The Two Main CSS Selectors
+           -----------------------------------------------------------
+           1. The Dot (.) = CLASS
+              - Think of this like a "Group Name" or "Badge".
+              - MANY elements can share the same class.
+              - Usage: .classname { ... }
+              
+           2. The Hash (#) = ID
+              - Think of this like a "Social Security Number" or "Fingerprint".
+              - ONLY ONE element on the page should have a specific ID.
+              - It is unique/special.
+              - Usage: #idname { ... }
+        ----------------------------------------------------------- */
+
+      /* EXAMPLE 1: Defining a Class (Notice the DOT) */
+      .red {
+        /* This rule applies to ANY element that has class="red" */
+        color: red;
+      }
+
+      /* EXAMPLE 2: Defining another Class */
+      .bg-yellow {
+        /* This rule applies to ANY element that has class="bg-yellow" */
+        background-color: yellow;
+      }
+
+      /* EXAMPLE 3: Defining an ID (Notice the HASH) */
+      #first-div {
+        /* This rule ONLY applies to the ONE element with id="first-div" */
+        font-weight: bold; /* Makes text thicker */
+        border: 2px solid black; /* Adds a box around it */
+      }
+
+      /* EXAMPLE 4: Defining another ID */
+      #second-div {
+        /* This rule ONLY applies to the ONE element with id="second-div" */
+        font-style: italic; /* Leans the text */
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The "Stage": Everything here is visible to the user -->
+
+    <!-- 
+       TEACHING NOTE: Combining Selectors
+       Below, we use ONE ID (unique identifier) and TWO Classes (reusable styles).
+       - id="first-div" -> Gives it the bold/black border style.
+       - class="red bg-yellow" -> Gives it red text AND yellow background.
+       Note: Classes are separated by a space!
+    -->
+    <div id="first-div" class="red bg-yellow">
+      This is the first div. It has a unique ID and two classes (red and
+      bg-yellow).
+    </div>
+
+    <!-- 
+       TEACHING NOTE: Reusability of Classes
+       We can use class="red" again here! That's the power of classes.
+       But we gave it a DIFFERENT ID ("second-div") so it gets its own unique border/style.
+    -->
+    <div id="second-div" class="red">
+      This is the second div. It shares the 'red' class but has its own unique
+      ID.
+    </div>
+
+    <!-- 
+       TEACHING NOTE: Tags don't matter to Classes
+       The .bg-yellow class was written for the first div, but we can use it 
+       on a <span> (or any tag) too! Classes are flexible.
+    -->
+    <span class="bg-yellow">
+      I am a span sharing the 'bg-yellow' class used by the first div.
+    </span>
+  </body>
+</html>
