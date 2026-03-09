@@ -1,0 +1,175 @@
+<!doctype html>
+<!-- Declares that this document uses HTML5 -->
+<html lang="en">
+  <!-- Root element of the webpage; lang="en" means the page language is English -->
+  <head>
+    <!-- The head section contains metadata, title, and internal styles -->
+
+    <meta charset="UTF-8" />
+    <!-- Sets character encoding to UTF-8 so text displays correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the layout responsive on mobile devices -->
+    <title>Inline vs Block Elements - Fahad's Web Dev Guide</title>
+    <!-- Title shown in the browser tab -->
+
+    <style>
+      /* Starts internal CSS used to style the page */
+
+      /* This rule styles the block-level example elements */
+      .block-example {
+        /* Selects all elements with class="block-example" */
+        background-color: lightskyblue; /* Gives block examples a light blue background */
+        border: 2px solid blue; /* Adds a blue border around each block example */
+        margin-bottom: 10px; /* Adds space below each block example */
+      } /* Ends the .block-example CSS rule */
+
+      /* This rule styles the inline example elements */
+      .inline-example {
+        /* Selects all elements with class="inline-example" */
+        background-color: lightcoral; /* Gives inline examples a light red background */
+        border: 2px solid red; /* Adds a red border around each inline example */
+      } /* Ends the .inline-example CSS rule */
+
+      /* This rule styles the whole page body */
+      body {
+        /* Selects the <body> element */
+        font-family:
+          Arial, sans-serif; /* Sets the page font to Arial, or sans-serif if Arial is unavailable */
+        line-height: 1.6; /* Adds spacing between lines of text for better readability */
+        padding: 20px; /* Adds inner space around the page content */
+      } /* Ends the body CSS rule */
+
+      /* This rule styles each section of the tutorial */
+      section {
+        /* Selects all <section> elements */
+        margin-bottom: 40px; /* Adds space below each section */
+        padding: 10px; /* Adds inner spacing inside each section */
+        border: 1px solid #ddd; /* Adds a light gray border around each section */
+      } /* Ends the section CSS rule */
+
+      /* This rule styles inline code text */
+      code {
+        /* Selects all <code> elements */
+        background-color: #f4f4f4; /* Gives code text a light gray background */
+        padding: 2px 5px; /* Adds small spacing inside the code box */
+        border-radius: 4px; /* Rounds the corners of the code background */
+      } /* Ends the code CSS rule */
+    </style>
+    <!-- Ends the internal CSS -->
+  </head>
+  <!-- Ends the head section -->
+
+  <body>
+    <!-- Starts the visible content of the webpage -->
+
+    <header>
+      <!-- Header section for the page introduction -->
+      <h1>Mastering Inline &amp; Block Elements</h1>
+      <!-- Main heading of the page -->
+      <p>Tutorial by <strong>Fahad</strong></p>
+      <!-- Introductory paragraph with bold text for the author's name -->
+    </header>
+    <!-- Ends the header -->
+
+    <hr />
+    <!-- Horizontal line used to visually separate the header from the main content -->
+
+    <section>
+      <!-- First tutorial section starts here -->
+      <h2>1. Block-Level Elements</h2>
+      <!-- Subheading for the block-level elements section -->
+      <p>
+        Block elements always start on a <strong>new line</strong> and take up
+        the <strong>full width</strong> available.
+      </p>
+      <!-- Explains what block elements do -->
+
+      <div class="block-example">
+        I am a &lt;div&gt;. Notice how I take up the whole width of the page!
+      </div>
+      <!-- Example of a block-level <div> element -->
+      <p class="block-example">
+        I am a &lt;p&gt; (paragraph). I also take the full width.
+      </p>
+      <!-- Example of a block-level paragraph element -->
+    </section>
+    <!-- Ends the first section -->
+
+    <section>
+      <!-- Second tutorial section starts here -->
+      <h2>2. Inline Elements</h2>
+      <!-- Subheading for the inline elements section -->
+      <p>
+        Inline elements do <strong>not</strong> start on a new line. They only
+        take up as much width as their content needs.
+      </p>
+      <!-- Explains what inline elements do -->
+
+      <span class="inline-example">I am a &lt;span&gt;.</span>
+      <!-- Example of an inline <span> element -->
+      <a href="#" class="inline-example">I am an &lt;a&gt; (anchor) tag.</a>
+      <!-- Example of an inline anchor/link element -->
+      <strong class="inline-example">I am bold.</strong>
+      <!-- Example of an inline <strong> element -->
+
+      <p style="margin-top: 15px">
+        Notice how the red boxes above stay on the <strong>same line</strong>?
+        That is the power of inline elements.
+      </p>
+      <!-- Explains that inline elements stay on the same line -->
+    </section>
+    <!-- Ends the second section -->
+
+    <section>
+      <!-- Third tutorial section starts here -->
+      <h2>3. Vertical Form (No &lt;br&gt; Tag Challenge)</h2>
+      <!-- Subheading for the form example section -->
+      <p>
+        By using Block elements (like <code>&lt;div&gt;</code>), we can stack
+        items vertically without using line breaks.
+      </p>
+      <!-- Explains why block elements help arrange form fields vertically -->
+
+      <form>
+        <!-- Starts the form -->
+        <div>
+          <!-- Wrapper for the first form field; div is block-level so it appears on a new line -->
+          <label for="name">Name:</label>
+          <!-- Label connected to the input with id="name" -->
+          <input type="text" id="name" name="name" />
+          <!-- Text input for entering the user's name -->
+        </div>
+        <!-- Ends the first form field wrapper -->
+
+        <div>
+          <!-- Wrapper for the second form field -->
+          <label for="city">City:</label>
+          <!-- Label connected to the input with id="city" -->
+          <input type="text" id="city" name="city" />
+          <!-- Text input for entering the user's city -->
+        </div>
+        <!-- Ends the second form field wrapper -->
+
+        <div>
+          <!-- Wrapper for the third form field -->
+          <label for="pincode">Pin Code:</label>
+          <!-- Label connected to the input with id="pincode" -->
+          <input type="text" id="pincode" name="pincode" />
+          <!-- Text input for entering the user's pin code -->
+        </div>
+        <!-- Ends the third form field wrapper -->
+      </form>
+      <!-- Ends the form -->
+    </section>
+    <!-- Ends the third section -->
+
+    <footer>
+      <!-- Footer section at the bottom of the page -->
+      <p>&copy; 2026 Fahad | Built for educational purposes.</p>
+      <!-- Footer text with copyright -->
+    </footer>
+    <!-- Ends the footer -->
+  </body>
+  <!-- Ends the visible page content -->
+</html>
+<!-- Ends the HTML document -->
