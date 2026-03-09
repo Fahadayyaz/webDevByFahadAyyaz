@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Declares the document type. It tells the browser that this page is written in HTML5 -->
+
+<html lang="en">
+  <!-- The root element of the webpage. 
+     "lang=en" tells browsers and search engines that the page language is English -->
+
+  <head>
+    <!-- The head section contains metadata (information about the page).
+         This information is not visible on the webpage itself -->
+
+    <meta charset="UTF-8" />
+    <!-- Defines the character encoding.
+         UTF-8 supports almost all characters and languages -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive on mobile devices.
+         width=device-width makes the layout match the device screen width -->
+
+    <title>About Fahad | Web Development Journey Day 06</title>
+    <!-- The title of the webpage.
+         This appears on the browser tab and is important for SEO -->
+
+    <meta
+      name="description"
+      content="This is my Day 06 project of the web Development course. Learning about SEO, LCP, FID, and CLS."
+    />
+    <!-- SEO description.
+         Search engines use this text to show a summary of the page in search results -->
+
+    <meta
+      name="keywords"
+      content="HTML, SEO, Core Web Vitals, Beginners Guide, Web Dev"
+    />
+    <!-- SEO keywords (less important today but still good practice).
+         Helps search engines understand what the page is about -->
+
+    <style>
+      /* Internal CSS starts here.
+         This style section controls the design of the page */
+
+      /* CSS for the body: Sets the font, spacing, and text readability */
+      body {
+        font-family: Arial, sans-serif; /* Clean, easy-to-read font */
+        line-height: 1.6; /* Adds space between lines of text */
+        margin: 20px; /* Adds space around the outside of the content */
+      }
+
+      /* Container class: Centers the content and limits its width for better UX */
+      .container {
+        max-width: 700px; /* Prevents the text from stretching too wide on big screens */
+        margin: auto; /* Centers the container horizontally */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The body section contains all visible content of the webpage -->
+
+    <div class="container">
+      <!-- A container div used to wrap the page content
+           and keep it centered with limited width -->
+
+      <h1>Welcome to My Web Dev Journey - Day 06</h1>
+      <!-- Main heading of the page.
+           There should usually be only one H1 per page for SEO -->
+
+      <p>
+        <!-- Paragraph introducing the author -->
+        Hi, I am <strong>Fahad</strong>.
+        <!-- <strong> makes text bold and indicates importance -->
+
+        Today I learned about Search Engine Optimization (SEO) and how to make
+        websites faster and more stable.
+      </p>
+
+      <h2>Preventing Layout Shift</h2>
+      <!-- Second-level heading used to create structure in the content -->
+
+      <img
+        src="https://www.anitian.com/wp-content/uploads/2016/04/Hacking-Nagios-The-Importance-of-System-Hardening-Anitian.jpg"
+        alt="Learning SEO Image"
+        width="600"
+        height="300"
+      />
+      <!-- Image element.
+           src = the image source URL
+           alt = alternative text for accessibility and SEO
+           width & height = reserve space to prevent layout shift (important for CLS) -->
+
+      <h3>Key Concepts Learned Today:</h3>
+      <!-- Third-level heading introducing the list -->
+
+      <ul>
+        <!-- Unordered list used to show items with bullet points -->
+
+        <li>
+          <strong>LCP (Largest Contentful Paint):</strong>
+          <!-- Largest Contentful Paint measures how quickly the main content loads -->
+          How fast the main content loads.
+        </li>
+
+        <li>
+          <strong>FID (First Input Delay):</strong>
+          <!-- First Input Delay measures how quickly the page responds to user interaction -->
+          How fast the site responds to your first click.
+        </li>
+
+        <li>
+          <strong>CLS (Cumulative Layout Shift):</strong>
+          <!-- Cumulative Layout Shift measures visual stability of the page -->
+          Ensuring the page doesn't move unexpectedly.
+        </li>
+      </ul>
+
+      <p>
+        <!-- Closing paragraph giving credits -->
+        Special thanks to my mentors <strong>Alex</strong> and
+        <strong>Jordan</strong>
+        for the inspiration on this module!
+      </p>
+    </div>
+  </body>
+</html>
