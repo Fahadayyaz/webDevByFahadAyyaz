@@ -1,0 +1,187 @@
+<!-- The DOCTYPE declaration defines the document type to be HTML5. It's the very first thing in your HTML document. -->
+<!doctype html>
+<!-- The <html> tag is the root element of an HTML page. The "lang" attribute specifies the language of the document's content, which is English ("en") here. -->
+<html lang="en">
+  <!-- The <head> element contains meta-information about the HTML document, which is not displayed on the page itself. -->
+  <head>
+    <!-- The <meta charset="UTF-8"> tag specifies the character encoding for the document. UTF-8 is a standard that can represent any character in the Unicode standard. -->
+    <meta charset="UTF-8" />
+    <!-- The <meta name="viewport"> tag gives the browser instructions on how to control the page's dimensions and scaling. "width=device-width" sets the width of the page to follow the screen-width of the device. "initial-scale=1.0" sets the initial zoom level when the page is first loaded. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The <title> tag specifies a title for the HTML document. This title is shown in the browser's title bar or in the page's tab. -->
+    <title>Document</title>
+  </head>
+  <!-- The <body> element contains the visible page content that is displayed in the browser. -->
+  <body>
+    <!-- <h1> is a top-level heading tag. It's used for the most important heading on the page. -->
+    <h1>Day5: Tables and Lists</h1>
+
+    <!-- The <table> tag is used to create a table. The "border" attribute adds a border to the table and its cells. A value of "1" means a 1-pixel wide border. -->
+    <table border="1">
+      <!-- The <caption> tag defines a table caption. It's like a title for the table and is usually centered above it. -->
+      <caption>
+        Employee Details
+      </caption>
+      <!-- The <thead> tag is used to group the header content in an HTML table. -->
+      <!-- The "bgColor" attribute sets the background color. Note: This is an older attribute; modern web design uses CSS for styling. -->
+      <thead bgColor="red">
+        <!-- The <tr> tag defines a row in a table. -->
+        <tr>
+          <!-- The <th> tag defines a header cell in a table. Text in <th> elements is bold and centered by default. -->
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Skill</th>
+        </tr>
+      </thead>
+      <!-- The <tbody> tag groups the body content in an HTML table. This is where the main data of the table goes. -->
+      <tbody>
+        <!-- This is another table row. -->
+        <tr>
+          <!-- The <td> tag defines a standard data cell in a table. -->
+          <td>Fahad</td>
+          <td>Developer</td>
+          <td>MERN stack</td>
+        </tr>
+        <tr>
+          <!-- The "colspan" attribute specifies how many columns a cell should span (merge). colspan="0" is not standard; browsers typically treat it as if the attribute wasn't set. The intended use might have been to span all columns. -->
+          <td colspan="0">Saim</td>
+          <!-- This cell will span across 2 columns. -->
+          <td colspan="2">Manager</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Intern</td>
+          <!-- The "rowspan" attribute specifies how many rows a cell should span (merge). This cell will extend downwards across 3 rows. -->
+          <td rowspan="3">Java</td>
+        </tr>
+        <tr>
+          <!-- This row only has two cells because the third cell's space is occupied by the "Java" cell from the row above. -->
+          <td>Idrees</td>
+          <td>Intern</td>
+        </tr>
+      </tbody>
+      <!-- The <tfoot> tag is used to group the footer content in a table. -->
+      <tfoot>
+        <tr>
+          <!-- This cell spans across all 3 columns to create a footer row. -->
+          <td colspan="3">Enjoy...!</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- The <br> tag creates a line break. Using two creates a double space. -->
+    <br /><br />
+
+    <!-- <h2> defines a second-level heading. -->
+    <h2>HTML Lists</h2>
+    <!-- <h3> defines a third-level heading. -->
+    <h3>Square list</h3>
+    <!-- The <ul> tag creates an unordered list (a bulleted list). -->
+    <!-- The "type" attribute can change the bullet style. "square" uses square bullets. -->
+    <ul type="square">
+      <!-- The <li> tag defines a list item. -->
+      <li>Apple</li>
+      <li>Grapes</li>
+      <li>Mango</li>
+    </ul>
+    <h3>Discs / Bullets</h3>
+    <!-- "type='disc'" is the default style for unordered lists, showing a filled circle bullet. -->
+    <ul type="disc">
+      <li>Apple</li>
+      <li>Grapes</li>
+      <li>Mango</li>
+    </ul>
+    <h3>Circle</h3>
+    <!-- "type='circle'" shows an unfilled circle bullet. -->
+    <ul type="circle">
+      <li>Apple</li>
+      <li>Grapes</li>
+      <li>Mango</li>
+    </ul>
+
+    <!-- The <ol> tag creates an ordered list (a numbered or lettered list). -->
+    <h3>Odered List "A"</h3>
+    <!-- The "type" attribute changes the numbering style. "A" uses uppercase letters. -->
+    <ol type="A">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <h3>Odered List "a, b, c"</h3>
+    <!-- "type='a'" uses lowercase letters. -->
+    <ol type="a">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <h3>Odered List "1,2,3"</h3>
+    <!-- "type='1'" is the default style for ordered lists, using numbers. -->
+    <ol type="1">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <h3>Odered List "I, II, III"</h3>
+    <!-- "type='I'" uses uppercase Roman numerals. -->
+    <ol type="I">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+    <h3>Odered List "i, ii, iii"</h3>
+    <!-- "type='i'" uses lowercase Roman numerals. -->
+    <ol type="i">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <h3>Nested lists</h3>
+    <!-- A nested list is a list inside another list. You create it by putting a <ul> or <ol> inside an <li> element. -->
+<ul>
+  <li><strong>Citrus Fruits</strong> (Khatte phal)
+    <!-- This is a nested unordered list. -->
+    <ul>
+      <li>Lemon</li>
+      <li>Orange</li>
+      <li>Grapefruit</li>
+    </ul>
+  </li>
+  
+    <h3>Definition List</h3>
+    <!-- The <dl> tag creates a definition list, which is a list of terms and their definitions. -->
+    <dl>
+      <!-- The <dt> tag defines the term (the name). -->
+      <dt>HTML:</dt>
+      <!-- The <dd> tag defines the description of the term. -->
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS:</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <h3>Start from 5</h3>
+    <!-- The "start" attribute for an ordered list specifies the starting value of the list. Here, it will start from 5. -->
+    <ol start="5">
+  <li>
+    <!-- The <strong> tag is used to give text strong importance, and it typically appears as bold. -->
+    <strong>Mango</strong> (The King)
+    <!-- Another nested unordered list. -->
+    <ul>
+      <li>Sindhri</li>
+      <li>Anwar Ratol</li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Citrus</strong>
+    <!-- This is a nested ordered list. It will start from 1 by default. -->
+    <ol start="1"> <li>Orange</li>
+      <li>Kinnow</li>
+    </ol>
+  </li>
+  
+  <li>Apple</li>
+  <li>Banana</li>
+</ol>
+  </body>
+</html>
