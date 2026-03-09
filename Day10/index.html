@@ -1,0 +1,153 @@
+<!-- Declares the document type as HTML5 -->
+<!doctype html>
+
+<!-- Root element of the HTML document; lang="en" means page language is English -->
+<html lang="en">
+  <!-- Head section contains page settings and metadata -->
+  <head>
+    <!-- Sets character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title shown in the browser tab -->
+    <title>Day-10 Video, Audio and Media</title>
+  </head>
+
+  <!-- Body contains all visible webpage content -->
+  <body>
+    <!-- Main heading of the page -->
+    <h1>Video, Audio and Media in HTML</h1>
+
+    <!-- Section heading for video -->
+    <h2>Video Example</h2>
+
+    <!--
+      Video tag is used to embed video in a webpage.
+
+      src = path of video file
+      width = video width
+      height = video height
+      controls = shows video controls like play/pause
+      autoplay = starts video automatically
+      muted = starts video without sound
+      loop = repeats video again and again
+      poster = thumbnail image shown before video plays
+    -->
+    <video
+      src="video.mp4"
+      width="300"
+      height="200"
+      controls
+      autoplay
+      muted
+      loop
+      poster="thumbnail.jpg"
+    >
+      <!-- Fallback text shown if browser does not support video -->
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Horizontal line to separate sections -->
+    <hr />
+
+    <!-- Section heading for audio -->
+    <h2>Audio Example</h2>
+
+    <!--
+      Audio tag is used to embed sound/music in a webpage.
+
+      src = path of audio file
+      controls = shows audio controls
+      autoplay = starts audio automatically
+      loop = repeats audio after ending
+      preload = tells browser to load audio early
+    -->
+    <audio src="audio.mp3" controls autoplay loop preload="auto">
+      <!-- Fallback text shown if browser does not support audio -->
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Horizontal line to separate sections -->
+    <hr />
+
+    <!-- Section heading for SVG -->
+    <h2>SVG Image</h2>
+
+    <!--
+      SVG stands for Scalable Vector Graphics.
+      SVG is used to draw shapes using code.
+      It stays clear even when resized.
+    -->
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+      <!--
+        Circle shape inside SVG.
+
+        cx = center position on x-axis
+        cy = center position on y-axis
+        r = radius of circle
+        stroke = border color
+        stroke-width = border thickness
+        fill = inside color
+      -->
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        stroke-width="4"
+        fill="yellow"
+      />
+    </svg>
+
+    <!-- Horizontal line to separate sections -->
+    <hr />
+
+    <!-- Section heading for iframe website embedding -->
+    <h2>Iframe (Embedding Website)</h2>
+
+    <!--
+      Iframe is used to display another webpage inside your webpage.
+
+      src = website URL to display
+      width = iframe width
+      height = iframe height
+    -->
+    <iframe src="https://www.youtube.com/" width="500" height="300"></iframe>
+
+    <!-- Horizontal line to separate sections -->
+    <hr />
+
+    <!-- Section heading for YouTube video embed -->
+    <h2>YouTube Video Embed</h2>
+
+    <!--
+      This iframe embeds a YouTube video.
+
+      src = embed link of YouTube video
+      title = description for accessibility
+      frameborder = removes old default border
+      allow = grants permission for certain features
+      allowfullscreen = lets user open video in fullscreen
+    -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/LegZUuOVZ9Y"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      allowfullscreen
+    >
+    </iframe>
+  </body>
+</html>
