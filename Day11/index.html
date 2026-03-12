@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day11-Semantic HTML Layout</title>
+  </head>
+  <body>
+    <!-- HEADER: The top section of the webpage.
+         Usually contains the website title, logo, and navigation menu -->
+    <header>
+      <!-- Main heading of the website -->
+      <h1>My Tech Blog</h1>
+
+      <!-- NAV: Navigation section that contains links to different parts/pages -->
+      <nav>
+        <!-- Unordered list used to organize navigation links -->
+        <ul>
+          <!-- Each list item contains a link -->
+          <li><a href="#home">Home</a></li>
+
+          <!-- Anchor tag creates a clickable link -->
+          <li><a href="#courses">Courses</a></li>
+
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN: The primary content area of the webpage.
+         A page should have only ONE main tag -->
+    <main>
+      <!-- SECTION: Groups related content together -->
+      <section>
+        <!-- ARTICLE: Represents a self-contained piece of content
+                 like a blog post, news article, or tutorial -->
+        <article>
+          <!-- Subheading for this article -->
+          <h2>Introduction to Semantic HTML</h2>
+
+          <!-- Paragraph showing publishing information -->
+          <p>
+            Published on:
+            <!-- TIME: Represents date/time information in a machine-readable format -->
+            <time datetime="2026-03-12">March 12, 2026</time>
+          </p>
+
+          <!-- Normal paragraph of article text -->
+          <p>
+            Semantic HTML tags provide meaning to the web page rather than just
+            presentation. For example, using a header tag tells the browser this
+            is the top of the page.
+          </p>
+
+          <!-- FIGURE: Used for images, diagrams, or illustrations -->
+          <figure>
+            <!-- IMG: Displays an image -->
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="Example Image"
+            />
+
+            <!-- FIGCAPTION: Caption/description for the figure -->
+            <figcaption>
+              Fig.1 - An illustration of how tags organize content.
+            </figcaption>
+          </figure>
+
+          <!-- Another paragraph of the article -->
+          <p>
+            By using tags like &lt;article&gt; and &lt;section&gt;, we make our
+            code more accessible for screen readers and search engines.
+          </p>
+        </article>
+      </section>
+
+      <!-- ASIDE: Secondary content related to the main content
+             such as sidebars, author info, ads, or related posts -->
+      <aside>
+        <!-- Sidebar heading -->
+        <h3>About the Author</h3>
+
+        <!-- Author description -->
+        <p>
+          Fahad is a Software Engineer specializing in full-stack development
+          and technical education.
+        </p>
+
+        <!-- Another sidebar section -->
+        <h3>Related Posts</h3>
+
+        <!-- List of related articles -->
+        <ul>
+          <li>Learning CSS Flexbox</li>
+          <li>JavaScript Fundamentals</li>
+        </ul>
+      </aside>
+    </main>
+
+    <!-- FOOTER: Bottom section of the webpage.
+         Usually contains copyright, legal links, and extra information -->
+    <footer>
+      <!-- Copyright text -->
+      <p>&copy; 2026 Fahad's web development course. All rights reserved.</p>
+
+      <!-- Footer navigation links -->
+      <p>
+        <a href="/privacy">Privacy Policy</a> |
+        <a href="/terms">Terms of Service</a>
+      </p>
+    </footer>
+  </body>
+</html>
